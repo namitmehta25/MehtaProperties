@@ -1,0 +1,394 @@
+<!-- Figma Wireframe Reference: https://embed.figma.com/design/Ao2CAaDiMgddIe52jdZYyC/Mehta-Prop?node-id=40-1498&embed-host=share -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mehta Properties | Panipat Property Dealer for Plots, Residential & Commercial Land</title>
+  <meta name="description" content="Buy plots in Panipat with Mehta Properties – your trusted property dealer for residential, commercial, and agricultural real estate. Since 2006.">  
+  <link rel="icon" href="icons8-real-estate.svg" />
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="dist.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Nav Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+        <a href="#home">
+            <div class="logo">
+                <svg viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Text -->
+                    <text x="0" y="30" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#2c5aa0">MEHTA</text>
+                    <text x="0" y="50" font-family="Arial, sans-serif" font-size="22" fill="#666">PROPERTIES</text>
+                    <text x="150" y="50" font-family="Zilla Slab, serif" font-weight=700 font-style=italic font-size="40" fill="#2c5aa0">
+                      Since 2006
+                  </text>
+                </svg>
+            </div>
+        </a>
+
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Our Services</a></li>
+            <li><a href="#listings" class="nav-link">Featured Listings</a></li>
+            <li><a href="#findus" class="nav-link">Find Us</a></li>
+            <li><a href="#contact" class="inquire-btn">Enquire</a></li>
+        </ul>
+    </div>
+</nav>
+  <!-- Hero Section -->
+  <div id="home">
+  <section class="relative h-screen flex items-center justify-center">
+    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+      <source src="bg-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <!-- <div class="absolute inset-0 bg-black bg-opacity-30 z-10"></div> -->
+    <!-- <div class="absolute inset-0 bg-black/100 z-10"></div> -->
+    <div class="absolute inset-0 z-10" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+
+    <div class="relative z-20 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Discover Your Dream 
+      </h1>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Property in Panipat
+      </h1><br><br>
+      <p class="text-lg md:text-2xl mb-6" style="background-color: rgba(0, 0, 0, 0.5);">
+        <span class="font-bold">Mehta Properties</span>, your trusted Panipat property dealer since 2006, <br> We connect you with the BEST Residential, Commercial, Agricultural land, and To-Let Options.
+      </p>
+      <a href="#contact" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded shadow-lg transition">
+        Enquire Now
+      </a>
+    </div>
+  </section>
+  </div>
+  <!-- Services Section -->
+  <section class="py-16 bg-white" id="services">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a href="#contact">
+          <div class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+            <img src="https://img.icons8.com/ios-filled/100/4a90e2/field.png" alt="Agricultural Plots" class="w-20 h-20 mb-4" />
+            <h3 class="text-xl font-semibold mb-2">Agricultural Plots</h3>
+            <p class="text-gray-600 text-center">Buy and sell fertile agricultural land in and around Panipat.</p>
+          </div>
+        </a>
+        <a href="#contact"> 
+          <div class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+            <img src="https://img.icons8.com/ios-filled/100/4a90e2/cottage.png" alt="Residential Plots" class="w-20 h-20 mb-4" />
+            <h3 class="text-xl font-semibold mb-2">Residential Plots</h3>
+            <p class="text-gray-600 text-center">Find your dream home or residential plot with expert guidance.</p>
+          </div>
+        </a>
+        <a href="#contact">
+        <div class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+          <img src="https://img.icons8.com/ios-filled/100/4a90e2/city-buildings.png" alt="Commercial Plots" class="w-20 h-20 mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Commercial Plots</h3>
+          <p class="text-gray-600 text-center">Prime commercial properties and plots for your business needs.</p>
+        </div>
+      </a>
+      </div>
+      <a href="#contact">
+      <div class="mt-10 flex flex-col md:flex-row justify-center gap-8">
+        <div class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+          <img src="https://img.icons8.com/ios-filled/100/4a90e2/factory.png" alt="Factories" class="w-20 h-20 mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Factories</h3>
+          <p class="text-gray-600 text-center">Industrial land and factory spaces for sale and lease.</p>
+        </div>
+      </a>
+      <a href="#contact">
+        <div class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+          <img src="houserent.png" alt="To-Let Services" class="w-20 h-20 mb-4" />
+          <h3 class="text-xl font-semibold mb-2">To-Let Services</h3>
+          <p class="text-gray-600 text-center">Reliable to-let services for residential and commercial properties.</p>
+        </div>
+      </a>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Listings Section -->
+  <!-- <section class="py-16 bg-gray-50" id="listings">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Featured Listings in Panipat</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a href="#contact">
+          <div class="bg-white rounded-lg shadow p-4 flex flex-col shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="5 acre agricultural land in Panipat" class="rounded mb-4 h-48 object-cover " />
+            <h3 class="text-xl font-semibold mb-1">Green Acres Farm</h3>
+            <p class="text-gray-600 mb-2">5‑acre agricultural plot in Village XYZ, Panipat</p>
+            <ul class="text-gray-500 text-sm mb-4">
+              <li>5 Acres | Fertile Land</li>
+              <li>Water & Road Access</li>
+            </ul>
+            <p class="mt-auto text-blue-600 hover:underline">Get More Details</p>
+          </div>
+        </a>
+        <a href="#contact">
+          <div class="bg-white rounded-lg shadow p-4 flex flex-col shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="5 acre agricultural land in Panipat" class="rounded mb-4 h-48 object-cover" />
+            
+            <h3 class="text-xl font-semibold mb-1">Sunshine Residency</h3>
+            <p class="text-gray-600 mb-2">5-acre residential plot in Village XYZ, \t Panipat</p>
+            <ul class="text-gray-500 text-sm mb-4">
+              <li>Plot: 250 sq. yds</li>
+              <li>Gated Community</li>
+            </ul>
+            <p class="mt-auto text-blue-600 hover:underline">Get More Details</p>
+          </div>
+        </a>
+        <a href="#contact">
+          <div class="bg-white rounded-lg shadow p-4 flex flex-col shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80" alt="5 acre agricultural land in Panipat" class="rounded mb-4 h-48 object-cover" />
+            <h3 class="text-xl font-semibold mb-1">City Center Plaza</h3>
+            <p class="text-gray-600 mb-2">5‑acre commercial plot on GT Road,         Panipat</p>
+            <ul class="text-gray-500 text-sm mb-4">
+              <li>Shops & Offices</li>
+              <li>High Footfall Area</li>
+            </ul>
+            <p class="mt-auto text-blue-600 hover:underline">Get More Details</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section> -->
+  
+
+  <section class="py-16 bg-gray-50" id="listings">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Featured Listings in Panipat</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a href="#contact">
+          <div class="bg-white rounded-lg shadow p-4 flex flex-col shadow hover:shadow-lg transition">
+            <div class="rounded mb-4 h-48 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="5 acre agricultural land in Panipat" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <h3 class="text-xl font-semibold mb-1">Green Acres Farm</h3>
+            <p class="text-gray-600 mb-2">5‑acre agricultural plot in Village XYZ, Panipat</p>
+            <ul class="text-gray-500 text-sm mb-4">
+              <li>5 Acres | Fertile Land</li>
+              <li>Water & Road Access</li>
+            </ul>
+            <p class="mt-auto text-blue-600 hover:underline">Get More Details</p>
+          </div>
+        </a>
+        <a href="#contact">
+          <div class="bg-white rounded-lg shadow p-4 flex flex-col shadow hover:shadow-lg transition">
+            <div class="rounded mb-4 h-48 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="5 acre agricultural land in Panipat" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <h3 class="text-xl font-semibold mb-1">Sunshine Residency</h3>
+            <p class="text-gray-600 mb-2">5-acre residential plot in Village XYZ, Panipat</p>
+            <ul class="text-gray-500 text-sm mb-4">
+              <li>Plot: 250 sq. yds</li>
+              <li>Gated Community</li>
+            </ul>
+            <p class="mt-auto text-blue-600 hover:underline">Get More Details</p>
+          </div>
+        </a>
+        <a href="#contact">
+          <div class="bg-white rounded-lg shadow p-4 flex flex-col shadow hover:shadow-lg transition">
+            <div class="rounded mb-4 h-48 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80" alt="5 acre agricultural land in Panipat" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <h3 class="text-xl font-semibold mb-1">City Center Plaza</h3>
+            <p class="text-gray-600 mb-2">5‑acre commercial plot on GT Road, Panipat</p>
+            <ul class="text-gray-500 text-sm mb-4">
+              <li>Shops & Offices</li>
+              <li>High Footfall Area</li>
+            </ul>
+            <p class="mt-auto text-blue-600 hover:underline">Get More Details</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Realtor Section -->
+  <section class="py-16 bg-white" id="about">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+      <img src="Mr. Amit Mehta.png" alt="Mr. Amit Mehta" class="w-40 h-60 rounded-lg object-cover shadow-lg mb-6 md:mb-0" />
+      <div>
+        <h2 class="text-3xl font-bold mb-2">Mr. Amit Mehta</h2>
+        <p class="text-lg text-gray-700 mb-4">With over 20 years of experience, Mr. Amit Mehta is a trusted name in Panipat real estate. Known for his integrity, deep local knowledge, and commitment to transparent deals, he has helped hundreds of clients find their ideal property.</p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Trusted local expertise</li>
+          <li>Transparent, honest dealings</li>
+          <li>Extensive property network</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Why Choose Us Section -->
+  <section id="why" class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Why Choose Mehta Properties?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="https://img.icons8.com/ios-filled/50/4a90e2/handshake.png" class="mx-auto mb-4" alt="trusted Panipat expertise" />
+          <h3 class="font-semibold text-lg mb-2">Trusted Local Expertise</h3>
+          <p class="text-gray-600">Deep insight into Panipat’s real estate market and regulations.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="https://img.icons8.com/ios-filled/50/4a90e2/approval.png" class="mx-auto mb-4" alt="transparent property deals" />
+          <h3 class="font-semibold text-lg mb-2">Transparent Deals</h3>
+          <p class="text-gray-600">Clear Terms, Honest Pricing, No Hidden Charges.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="https://img.icons8.com/ios-filled/50/4a90e2/real-estate.png" class="mx-auto mb-4" alt="wide property options in Panipat" />
+          <h3 class="font-semibold text-lg mb-2">Wide Property Options</h3>
+          <p class="text-gray-600">Offers range from plots & farms to factories and rentals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Find Us Section -->
+  <section class="py-16 bg-white" id="findus">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Find Us</h2>
+      <div class="flex flex-col md:flex-row gap-8 items-center">
+        <iframe src="https://www.google.com/maps?q=+Mehta+Properties,+Sector-12,+HUDA,+Panipat,+Haryana,+India&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow"></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+      <div class="flex flex-col md:flex-row gap-8 items-center">
+        <div class="flex-1 w-full h-96 rounded-lg shadow" loading="lazy" data-tf-live="01JZ81WR4CDZ71422VNNKSZMTA"></div>
+        <div class="flex-1">
+          <h3 class="text-xl font-semibold mb-2">Contact Details</h3>
+          <p class="mb-2">Office: 649, Saini Complex, Sector‑12, HUDA, Panipat, Haryana 132103</p>
+          <a href="tel:+919991773301" class="block text-blue-600 hover:underline mb-1">📞 +91 99917 73301</a>
+          <a href="https://wa.me/919991773301" target="_blank" class="block text-green-600 hover:underline mb-1">💬 Chat on WhatsApp</a>
+          <p>Email: <a href="mailto:mehtaproperties2006@gmail.com" class="text-blue-600 hover:underline">mehtaproperties2006@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyoZ0U1wuvI5QMhDeTLhJFNO9C5MAOH8fGYMrfaqWkc5d_XA/viewform?usp=sharing&ouid=115378606276926124578" width="100%" height="400" class="rounded-lg shadow" loading="lazy"></iframe> -->
+  
+  <!-- <form id="contact-form" class="bg-white p-8 rounded-lg shadow space-y-6" x-data="{ name: '', contact: '', requirements: '', submitted: false }" @submit.prevent="submitted = true">
+    <div>
+      <label class="block mb-2 font-semibold">Name</label>
+      <input name="name" type="text" x-model="name" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+    </div>
+    <div>
+      <label class="block mb-2 font-semibold">Contact</label>
+      <input name="contact" type="tel" x-model="contact" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+    </div>
+    <div>
+      <label class="block mb-2 font-semibold">Your Requirements</label>
+      <textarea name="requirements" x-model="requirements" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded transition">Send Message</button>
+    <template x-if="submitted">
+      <p class="text-green-600 text-center mt-4">Thank you! We have received your message.</p>
+    </template>
+  </form> -->
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <h3 class="font-bold text-lg mb-2">Mehta Properties</h3>
+        <p>Office: 649, Saini Complex, Sector-12, HUDA, Panipat, Haryana, 132103</p>
+        <p>Email: <a href="mailto:mehtaproperties2006@gmail.com" class="text-yellow-400 hover:underline">mehtaproperties2006@gmail.com</a></p>
+        <p>Contact: <a href="tel:+919991773301" class="text-yellow-400 hover:underline">+91 99917 77301</a></p>
+      </div>
+      <div class="flex flex-col md:flex-row gap-4 items-center">
+        <a href="#services" class="hover:text-yellow-400">Services</a>
+        <a href="#listings" class="hover:text-yellow-400">Listings</a>
+        <a href="#about" class="hover:text-yellow-400">About</a>
+        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      </div>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-yellow-400"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook" /></a>
+        <a href="#" class="hover:text-yellow-400"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" /></a>
+        <a href="#" class="hover:text-yellow-400"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+    <div class="text-center text-gray-500 text-sm mt-6">&copy; 2025 Mehta Properties. All rights reserved.</div>
+  </footer>
+  <!-- Mobile Menu -->
+  <script>
+    function toggleMobileMenu() {
+        const navMenu = document.getElementById('navMenu');
+        navMenu.classList.toggle('active');
+    }
+
+    // Wait for DOM to load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add click event to mobile menu button
+        document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('navMenu');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const navMenu = document.getElementById('navMenu');
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (!navMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    });
+
+//     // Contact Form Submission
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const form = document.getElementById("contact-form");
+//   if (!form) return;
+
+//   form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     const data = {
+//       name: form.name.value,
+//       contact: form.contact.value,
+//       requirements: form.requirements.value
+//     };
+
+//     fetch("https://script.google.com/macros/s/AKfycbyLgG3vGDpYopgw_yIc5p3lhRABzI2zKFJeQzeOTF8jq00tzPw2nQk7jRRRYzniRdhJPQ/exec", {
+//       method: "POST",
+//       mode: "cors",
+//       headers: {
+//         "Content-Type": "application/json"
+//       },
+//       body: JSON.stringify(data)
+//     })
+//     .then(res => res.json())
+//     .then(response => {
+//       console.log("Form submission successful:", response);
+//       alert("Message sent!");
+//       form.reset();
+//     })
+//     .catch(err => {
+//       console.error("Fetch error:", err);
+//       alert("Something went wrong: " + err.message);
+//     });
+//   });
+// });
+  </script>
+  <script src="//embed.typeform.com/next/embed.js"></script>
+</body>
+</html> 

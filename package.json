@@ -1,0 +1,10 @@
+{
+  "name": "mehta-properties-landing",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "npx tailwindcss -c tailwind.config.js -i ./styles.css -o ./dist.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+} 
